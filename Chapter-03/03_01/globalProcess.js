@@ -1,4 +1,9 @@
-console.log(process.pid);
-console.log(process.versions.node);
+const grab = flag => {
+    let indexAfterFlag = process.argv.indexOf(flag) + 1;
+    return process.argv[indexAfterFlag];
+}
 
-console.log(process.argv);
+const greetings = grab("--greeting");
+const user = grab("--user");
+
+console.log(`${greetings} ${user}`);
