@@ -1,5 +1,5 @@
-const {inc,dec,getCount} = require("./myModule");
-const myMod = require("./myModule")
+const {inc,dec,getCount} = require("../lib/myModule");
+const myMod = require("../lib/myModule")
 const util = require("util");
 dec();
 dec();
